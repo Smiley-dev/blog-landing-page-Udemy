@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Blog Landing Page</title>
+            <link rel="stylesheet" href="css/style.css" />
+      </head>
+      <body class="font-body">
+            <div class="bg-white shadow-md">
+                  <header class="container mx-auto max-w-7xl flex flex-wrap items-center p-6 justify-between">
+                        <div class="flex items-center text-sec hover:text-pri cursor-pointer">
+                              <span class="font-semibold text-xl font-title">Tailwind News</span>
+                        </div>
+                        <div class="block md:hidden">
+                              <button id="menu-open" class="px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                          <path
+                                                fill-rule="evenodd"
+                                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                                clip-rule="evenodd"
+                                          />
+                                    </svg>
+                              </button>
+                              <button id="menu-close" class="hidden px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                          <path
+                                                fill-rule="evenodd"
+                                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"
+                                          />
+                                    </svg>
+                              </button>
+                        </div>
+                        <nav id="menu-items" class="hidden font-title w-full md:w-auto md:flex md:items-center">
+                              <ul class="text-lg">
+                                    <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+                                          <a href="#" class="text-pri hover:text-sec">Home</a>
+                                    </li>
+                                    <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                                          <a href="#" class="text-pri hover:text-sec">About</a>
+                                    </li>
+                                    <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                                          <a href="#" class="text-pri hover:text-sec">Contact</a>
+                                    </li>
+                                    <li class="mb-3 md:mb-0 block md:inline-block items-center">
+                                          <a href="#" class="text-pri hover:text-sec">Products & Shop</a>
+                                    </li>
+                              </ul>
+                        </nav>
+                  </header>
+            </div>
+            <div class="container px-4 mx-auto max-w-5xl">
+                  <div class="text-center py-10 sm:py-14">
+                        <h1 class="text-3xl md:text-5xl font-bold font-title text-sec">
+                              Latest Blog <br />
+                              <span class="text-pri">Posts</span>
+                        </h1>
+                        <p class="text-pri max-w-xs mx-auto py-6">Welcome to our blog site. Get our latest news with just one search!</p>
+                        <input type="search" class="bg-our-bg px-8 py-2 rounded-3xl shadow-inner ring-sec focus:outline-none focus:ring-1" placeholder="Search..." />
+                  </div>
+                  <section class="main">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 sm:gap-y-12 lg:gap-y-16 gap-x-12">
+                              <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                                    <a href="#" class="border-gray-100 md:flex block rounded-3xl overflow-hidden hover:shadow-xl transition duration-500 mb-12">
+                                          <div class="md:w-1/2">
+                                                <img src="img/img1.jpg" alt="" />
+                                          </div>
+                                          <div class="md:w-1/2 md:p-7 p-4">
+                                                <p class="px-3 py-1 bg-our-bg rounded text-sec text-xs inline">FEATURED</p>
+                                                <h2 class="font-bold text-pri md:text-2xl text-xl font-title py-3 transition duration-200 hover:text-sec">
+                                                      Why is it important to follow a Brand Style Guide for your business?
+                                                </h2>
+                                                <p class="text-gen pb-5">
+                                                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam est ipsa vero expedita corporis vitae eius ipsum, voluptatum sequi ullam
+                                                      doloribus impedit incidunt illum quasi itaque ut nostrum cum autem!
+                                                </p>
+                                                <div class="flex items-center">
+                                                      <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                                                      <div class="pl-3">
+                                                            <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                                                            <p class="text-gen text-xs">Brand Specialist</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="border border-gray-100 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent">
+                                    <a href="#">
+                                          <img src="img/img2.jpg" alt="" />
+                                          <div class="px-4 pb-6">
+                                                <h2 class="font-bold text-pri text-xl font-title py-3 transition duration-200 hover:text-sec">
+                                                      Why is it important to follow a Brand Style Guide for your business?
+                                                </h2>
+                                                <p class="text-gen pb-5">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi eos quas reprehenderit? Unde, veniam quia debitis praesentium soluta
+                                                      reprehenderit?
+                                                </p>
+                                                <div class="flex items-center">
+                                                      <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                                                      <div class="pl-3">
+                                                            <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                                                            <p class="text-gen text-xs">Brand Specialist</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="border border-gray-100 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent">
+                                    <a href="#">
+                                          <img src="img/img3.jpg" alt="" />
+                                          <div class="px-4 pb-6">
+                                                <h2 class="font-bold text-pri text-xl font-title py-3 transition duration-200 hover:text-sec">
+                                                      Why is it important to follow a Brand Style Guide for your business?
+                                                </h2>
+                                                <p class="text-gen pb-5">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi eos quas reprehenderit? Unde, veniam quia debitis praesentium soluta
+                                                      reprehenderit?
+                                                </p>
+                                                <div class="flex items-center">
+                                                      <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                                                      <div class="pl-3">
+                                                            <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                                                            <p class="text-gen text-xs">Brand Specialist</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="border border-gray-100 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent">
+                                    <a href="#">
+                                          <img src="img/img4.jpg" alt="" />
+                                          <div class="px-4 pb-6">
+                                                <h2 class="font-bold text-pri text-xl font-title py-3 transition duration-200 hover:text-sec">
+                                                      Why is it important to follow a Brand Style Guide for your business?
+                                                </h2>
+                                                <p class="text-gen pb-5">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi eos quas reprehenderit? Unde, veniam quia debitis praesentium soluta
+                                                      reprehenderit?
+                                                </p>
+                                                <div class="flex items-center">
+                                                      <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                                                      <div class="pl-3">
+                                                            <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                                                            <p class="text-gen text-xs">Brand Specialist</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="col-span-1 lg:col-span-2 border border-gray-100 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent">
+                                    <a href="#">
+                                          <img src="img/img5.jpg" alt="" class="lg:h-72 w-full" />
+                                          <div class="px-4 pb-6">
+                                                <h2 class="font-bold text-pri text-xl font-title py-3 transition duration-200 hover:text-sec">
+                                                      Why is it important to follow a Brand Style Guide for your business?
+                                                </h2>
+                                                <p class="text-gen pb-5">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi eos quas reprehenderit? Unde, veniam quia debitis praesentium soluta
+                                                      reprehenderit?
+                                                </p>
+                                                <div class="flex items-center">
+                                                      <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                                                      <div class="pl-3">
+                                                            <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                                                            <p class="text-gen text-xs">Brand Specialist</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="border border-gray-100 rounded-2xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent">
+                                    <a href="#">
+                                          <img src="img/img6.jpg" alt="" />
+                                          <div class="px-4 pb-6">
+                                                <h2 class="font-bold text-pri text-xl font-title py-3 transition duration-200 hover:text-sec">
+                                                      Why is it important to follow a Brand Style Guide for your business?
+                                                </h2>
+                                                <p class="text-gen pb-5">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi eos quas reprehenderit? Unde, veniam quia debitis praesentium soluta
+                                                      reprehenderit?
+                                                </p>
+                                                <div class="flex items-center">
+                                                      <img src="img/author1.jpg" alt="" class="w-9 h-9 rounded-full" />
+                                                      <div class="pl-3">
+                                                            <h6 class="text-xs text-pri font-bold">John Doe</h6>
+                                                            <p class="text-gen text-xs">Brand Specialist</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                        </div>
+                  </section>
+                  <section class="subscribe">
+                        <div class="text-center mx-auto py-12 sm:py-20 lg:py-32">
+                              <h6 class="text-3xl md:text-5xl font-bold font-title text-pri">
+                                    Subscribe to Our <br />
+                                    <span class="text-sec">Blog</span>
+                              </h6>
+                              <p class="max-w-xs mx-auto text-pri py-6">Please subscribe to get regular updates and featured news through your email!</p>
+                              <input type="email" class="px-8 py-2 bg-our-bg rounded-3xl shadow-inner focus:outline-none" placeholder="Email address" />
+                              <input
+                                    type="submit"
+                                    class="mt-4 sm:mt-0 sm:-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-800 focus:outline-none focus:ring-1 cursor-pointer"
+                                    value="Submit"
+                              />
+                        </div>
+                  </section>
+            </div>
+            <footer class="bg-pri">
+                  <div class="sm:flex text-center px-12 justify-between max-w-5xl mx-auto text-white py-8 font-title font-extrabold">
+                        <p>TailwindCSS</p>
+                        <p>All rights reserved @2021</p>
+                  </div>
+            </footer>
+            <script src="js/script.js"></script>
+      </body>
+</html>
